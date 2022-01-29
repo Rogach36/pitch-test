@@ -37,4 +37,10 @@ html {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  .container-center {
+    width: 1260px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
   
