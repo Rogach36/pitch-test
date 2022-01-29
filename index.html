@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gussi-collection</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main class="page-main">
+        <a class="page-header__logo">
+            <svg></svg>
+        </a>
+        <h1 class="visually-hidden">New Gussi collection</h1>
+        <section class="promo-slider promo">
+
+            <div class="promo__slide1">
+                <img class="promo__image3" src="" alt="photo of jacket" width="" height="">
+                <h2 class="promo__name-product1">Light coat</h2>            
+                <p class="promo__name-slogan">More cotton, more freedom</p>
+                <p class="promo__number-slide">01&ndash;03</p>
+            </div>
+            <div class="promo__slide2">
+                <img class="promo__image3" src="" alt="photo of jacket" width="" height="">
+                <h2 class="promo__name-product2">Sandy longsleeve</h2>
+                <p class="promo__name-slogan">More cotton, more freedom</p>
+                <p class="promo__number-slide">02&ndash;03</p>
+            </div>            
+            <div class="promo__slide3">
+                <img class="promo__image3" src="" alt="foto of jacket" width="" height="">
+                <h2 class="promo__name-product3">Lime jhacket</h2>
+                <p class="promo__name-slogan">More cotton, more freedom</p>
+                <p class="promo__number-slide">03&ndash;03</p>
+            </div>            
+            <button class="reviews__toggle reviews__toggle--left" type="button" aria-label="left side button"></button>
+            <button class="reviews__toggle reviews__toggle--right" type="button" aria-label="right side button"></button>
+        </section>
+        <section class="order">
+            <!-- Проверить в Аркане, Нердс или Лувре. По-моему такие штуки верстаются лейблами
+            и инпутами -->
+            <h2 class="order__title">New collection</h2>
+            <h3 class="order__name-product">Gussi light coat</h3>
+            <p class="order__description-product">
+                It takes you from the party to the after party with its fashion-forward styles. A playfull blend of retro and modern outdoor design.
+            </p>
+            <form class="order__form" action="#" method="post">
+                <fieldset class="order__form-color color">
+                    <legend class="color__title">Color</legend>
+                    <label for="black" class="visually-hidden"></label>
+                    <input type="radio" class="color__input" name="check color" id="black" checked>
+
+                    <label for="dark-grey" class="visually-hidden"></label>
+                    <input type="radio" class="color__input" name="check color" id="dark-grey">
+
+                    <label for="grey" class="visually-hidden"></label>
+                    <input type="radio" class="color__input" name="check color" id="grey">
+                </fieldset>
+                <fieldset class="order__form-size size">
+                    <legend class="size__title">Size</legend>
+                    <label for="xs-size" class="visually-hidden"></label>
+                    <input type="checkbox" class="size__input" name="check-size" id="xs-size">
+                    <label for="s-size" class="visually-hidden"></label>
+                    <input type="checkbox" class="size__input" name="check-size" id="s-size">
+                    <label for="m-size" class="visually-hidden"></label>
+                    <input type="checkbox" class="size__input" name="check-size" id="m-size">
+                    <label for="l-size" class="visually-hidden"></label>
+                    <input type="checkbox" class="size__input" name="check-size" id="l-size">
+                </fieldset> 
+                <fieldset class="order__form-quantity quantity">
+                    <legend class="quantity__title">Quantity</legend>                                        
+                    <button class="quantity__button-plus" id="plus">+</button>
+                    <label for="quantity" class="visually-hidden"></label> 
+                    <input  type="number" class="quantity__input" name="number" id="quantity" value="1">
+                    <button class="quantity__button-minus" id="minus">-</button>
+                </fieldset>
+                <fieldset class="order__cost cost">
+                    <legend class="cost__title">Cost</legend>
+                    <label for="cost-good" class="visually-hidden"></label>
+                    <!-- нужен ли тут label? -->
+                    <input type="text" class="cost__input" name="cost" id="cost-good">
+                </fieldset>
+            </form>         
+            <a class="order__guide-btn" href="#">Size guide</a>
+            <div class="order__details">
+                <p class="order__details-title">PRODUCT DETAILS</p>
+                <p class="order__details-description">Look out for its standout party dresses, feminine details, statement jackets and cool denim 
+                    including skinny-cut jeans and cute denim shorts, which sit alongside its directional footwear 
+                    and swimwear ranges.
+                </p>
+                <p class="order__details-contain">63% Viscose, 37% Polyamide.</p>
+            </div>                        
+            <a class="order__btn" href="#">Order now</a>
+            <div class="order__delivery">
+                <input type="radio" id="tab1" name="tab-group">
+                <label class="order__delivery-title" for="tab1">Delivery</label> 
+                <section class="order__delivery-content">Сontent</section> 
+            </div>
+            <div class="order__return">
+                <input type="radio" id="tab1" name="tab-group">
+                <label class="order__return-title" for="tab1">Return</label> 
+                <section class="order__return-content">Сontent</section> 
+            </div>
+            <section class="similar-collection">
+                <h2 class="similar-collectio__title">Similar collections</h2>
+                <div class="similar-collection-img collection">
+                    <a class="collection__1" href="#"><img src="" alt="image"></a>
+                    <a class="collection__2" href="#"><img src="" alt="image"></a>
+                </div>                
+            </section>          
+        </section>
+        <section class="newsletter subscribe">
+            <h2 class="newsletter__title">Subscribe our newsletter</h2>
+            <form id="subscribe-form" action="#" method="post">
+                <fieldset class="subscribe-form__feedback feedback">
+                    <legend class="feedback__title">Get notified about new collections of Gussi Store</legend>
+                    <label for="feedback-name" class="visually-hidden">Enter your name</label>
+                    <input type="text" name="feedback-name" id="feedback-name" placeholder="Your name">
+                    <label for="feedback-email" class="visually-hidden">Enter your e-mail</label>
+                    <input type="text" name="feedback-email" id="feedback-email" placeholder="Your e-mail">
+                </fieldset>          
+                <!-- выбор пола, галка и кнопка -->
+                <fieldset class="subscribe-form__sex gender">
+                    <legend class="gender__title">Choose your gender:</legend>
+                    <ul class="gender__list">
+                        <li class="gender__item">
+                            <input class="visually-hidden gender__input-radio" type="radio" name="sex" value="male" id="man" checked>
+                            <label class="gender__label-radio" for="variable">Male</label>
+                        </li>
+                        <li class="gender__item">
+                            <input class="visually-hidden gender__input-radio" type="radio" name="sex" value="female" id="woman">
+                            <label class="gender__label-radio" for="fixed">Female</label>
+                        </li>                      
+                    </ul>
+                </fieldset>
+                <input class="visually-hidden subscribe-form__check" type="checkbox" name="details" value="to approve" id="checking">
+                <label class="label-checkbox" for="checking">Look out for its standout party dresses, feminine details</label>
+                <button class="subscribe-form__button" type="submit">Subscribe Gussi</button>
+            </form>
+        </section>
+    </main>    
+</body>
+</html>
