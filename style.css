@@ -43,4 +43,80 @@ html {
     margin: 0 auto;
     padding: 0 50px;
   }
-  
+
+.page-header__logo {
+    position: absolute;
+    z-index: 5;
+}
+
+.logo__pic {
+    padding-top: 32px;
+}
+
+.promo__slide1 {    
+    background-image: url(img/desctop-img/slide1.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    min-height: 768px;
+  }
+
+   .promo__slide2,
+  .promo__slide3 {
+    display: none;
+  }
+
+
+.slide1__name,
+.slide1__slogan,
+.slide1__number {
+    color: #ffffff;
+}
+
+.slide1__name {
+    padding-top: 572px;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 400;
+    width: 295px;
+    margin-bottom: -30px;     
+}
+
+.slide1__slogan {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+
+  .slide1__number {  
+      font-size: 20px;
+      line-height: 32px; 
+      font-weight: 500;        
+      bottom: 12px;  
+      margin-left: 160px;   
+  }
+
+
+.promo-slider__toggle {
+    position: absolute;
+    z-index: 7;
+    bottom: 4px;
+    width: 17px;
+    height: 17px;   
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;   
+    
+}
+
+.promo-slider__toggle--left {
+    left: 62px;
+    transform: rotate(45deg);
+}
+
+.promo-slider__toggle--right {
+    left: 113px;
+    transform: rotate(225deg);
+    
+}

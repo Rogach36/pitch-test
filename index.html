@@ -9,33 +9,33 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <main class="page-main">
-        <a class="page-header__logo">
-            <svg></svg>
+    <header class="page-header container-center">
+        <a class="page-header__logo logo" href="#">
+            <img class="logo__pic" src="img/desctop-img/logo.svg" alt="gussi-logo">
         </a>
+    </header>
+    <main class="page-main">        
         <h1 class="visually-hidden">New Gussi collection</h1>
         <section class="promo-slider promo">
-
-            <div class="promo__slide1">
-                <img class="promo__image3" src="" alt="photo of jacket" width="" height="">
-                <h2 class="promo__name-product1">Light coat</h2>            
-                <p class="promo__name-slogan">More cotton, more freedom</p>
-                <p class="promo__number-slide">01&ndash;03</p>
+            <div class="promo__slide1 slide1 container-center"> 
+                <div class="">
+                    <h2 class="slide1__name">Light coat</h2>            
+                    <p class="slide1__slogan">More cotton, more freedom</p>
+                    <p class="slide1__number">01&nbsp;&ndash;&nbsp;03</p>  
+                </div>                              
             </div>
-            <div class="promo__slide2">
-                <img class="promo__image3" src="" alt="photo of jacket" width="" height="">
-                <h2 class="promo__name-product2">Sandy longsleeve</h2>
-                <p class="promo__name-slogan">More cotton, more freedom</p>
-                <p class="promo__number-slide">02&ndash;03</p>
+            <div class="promo__slide2 slide2">                
+                <h2 class="slide2__name-product2">Sandy longsleeve</h2>
+                <p class="slide2__name-slogan">More cotton, more freedom</p>
+                <p class="slide2__number">02&ndash;03</p>                
             </div>            
-            <div class="promo__slide3">
-                <img class="promo__image3" src="" alt="foto of jacket" width="" height="">
-                <h2 class="promo__name-product3">Lime jhacket</h2>
-                <p class="promo__name-slogan">More cotton, more freedom</p>
-                <p class="promo__number-slide">03&ndash;03</p>
+            <div class="promo__slide3 slide3">                
+                <h2 class="slide3__name-product3">Lime jacket</h2>
+                <p class="slide3__name-slogan">More cotton, more freedom</p>
+                <p class="slide3__number">03&ndash;03</p>
             </div>            
-            <button class="reviews__toggle reviews__toggle--left" type="button" aria-label="left side button"></button>
-            <button class="reviews__toggle reviews__toggle--right" type="button" aria-label="right side button"></button>
+            <button class="promo-slider__toggle promo-slider__toggle--left" type="button" aria-label="left side button"></button>
+            <button class="promo-slider__toggle promo-slider__toggle--right" type="button" aria-label="right side button"></button>
         </section>
         <section class="order">
             <!-- Проверить в Аркане, Нердс или Лувре. По-моему такие штуки верстаются лейблами
@@ -129,7 +129,7 @@
                             <label class="gender__label-radio" for="variable">Male</label>
                         </li>
                         <li class="gender__item">
-                            <input class="visually-hidden gender__input-radio" type="radio" name="sex" value="female" id="woman">
+                            <input class="gender__input-radio" type="radio" name="sex" value="female" id="woman">
                             <label class="gender__label-radio" for="fixed">Female</label>
                         </li>                      
                     </ul>
