@@ -18,11 +18,11 @@
         <h1 class="visually-hidden">New Gussi collection</h1>
         <section class="promo-slider promo">
             <div class="promo__slide1 slide1 container-center"> 
-                <div class="">
+                
                     <h2 class="slide1__name">Light coat</h2>            
                     <p class="slide1__slogan">More cotton, more freedom</p>
                     <p class="slide1__number">01&nbsp;&ndash;&nbsp;03</p>  
-                </div>                              
+                >                              
             </div>
             <div class="promo__slide2 slide2">                
                 <h2 class="slide2__name-product2">Sandy longsleeve</h2>
@@ -33,9 +33,11 @@
                 <h2 class="slide3__name-product3">Lime jacket</h2>
                 <p class="slide3__name-slogan">More cotton, more freedom</p>
                 <p class="slide3__number">03&ndash;03</p>
-            </div>            
-            <button class="promo-slider__toggle promo-slider__toggle--left" type="button" aria-label="left side button"></button>
-            <button class="promo-slider__toggle promo-slider__toggle--right" type="button" aria-label="right side button"></button>
+            </div>   
+            <div class="container-center promo-slider__toggle-cover">         
+                <button class="promo-slider__toggle promo-slider__toggle--left" type="button" aria-label="left side button"></button>
+                <button class="promo-slider__toggle promo-slider__toggle--right" type="button" aria-label="right side button"></button>
+            </div>
         </section>
         <section class="order">
             <!-- Проверить в Аркане, Нердс или Лувре. По-моему такие штуки верстаются лейблами
@@ -48,14 +50,16 @@
             <form class="order__form" action="#" method="post">
                 <fieldset class="order__form-color color">
                     <legend class="color__title">Color</legend>
-                    <label for="black" class="visually-hidden"></label>
-                    <input type="radio" class="color__input" name="check color" id="black" checked>
-
-                    <label for="dark-grey" class="visually-hidden"></label>
-                    <input type="radio" class="color__input" name="check color" id="dark-grey">
-
-                    <label for="grey" class="visually-hidden"></label>
-                    <input type="radio" class="color__input" name="check color" id="grey">
+                    
+                    <input type="radio" class="color__input visually-hidden" name="check-color" id="black" checked>
+                    <label for="black" class="color__label color__label--black"></label>                    
+                    
+                    <input type="radio" class="color__input visually-hidden" name="check-color" id="dark-grey">
+                    <label for="dark-grey" class="color__label color__label-grey"></label>                    
+                    
+                    <input type="radio" class="color__input visually-hidden" name="check-color" id="grey">
+                    <label for="grey" class="color__label color__label-d-grey"></label>
+                    
                 </fieldset>
                 <fieldset class="order__form-size size">
                     <legend class="size__title">Size</legend>
