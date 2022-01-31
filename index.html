@@ -9,15 +9,15 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="page-header container-center">
+    <header class="page-header promo-slider__wrapper">
         <a class="page-header__logo logo" href="#">
             <img class="logo__pic" src="img/desctop-img/logo.svg" alt="gussi-logo">
         </a>
     </header>
-    <main class="page-main">        
+    <main class="page-main container-center">        
         <h1 class="visually-hidden">New Gussi collection</h1>
         <section class="promo-slider promo">
-            <div class="promo__slide1 slide1 container-center"> 
+            <div class="promo__slide1 slide1 promo-slider__wrapper"> <!-- был в теге слева container-center  -->
                 
                     <h2 class="slide1__name">Light coat</h2>            
                     <p class="slide1__slogan">More cotton, more freedom</p>
@@ -34,7 +34,7 @@
                 <p class="slide3__name-slogan">More cotton, more freedom</p>
                 <p class="slide3__number">03&ndash;03</p>
             </div>   
-            <div class="container-center promo-slider__toggle-cover">         
+            <div class="promo-slider__toggle-cover"> <!-- был в теге слева container-center     -->    
                 <button class="promo-slider__toggle promo-slider__toggle--left" type="button" aria-label="left side button"></button>
                 <button class="promo-slider__toggle promo-slider__toggle--right" type="button" aria-label="right side button"></button>
             </div>
@@ -47,6 +47,7 @@
             <p class="order__description-product">
                 It takes you from the party to the after party with its fashion-forward styles. A playfull blend of retro and modern outdoor design.
             </p>
+            <hr class="order__line1">
             <form class="order__form" action="#" method="post">
                 <fieldset class="order__form-color color">
                     <legend class="color__title">Color</legend>
@@ -79,20 +80,32 @@
                 </fieldset> 
                 <fieldset class="order__form-quantity quantity">
                     <legend class="quantity__title">Quantity</legend> 
+
+                    <input type="radio" class="quantity__input visually-hidden" name="chose-quantity" id="quantity-plus" checked>
+                    <label for="quantity-plus" class="quantity__label quantity__label-plus">+</label>
+
+                    <label for="quantity" class="quantity__label-number"></label> 
+                    <input  type="text" class="quantity__input-number" name="number" id="quantity" value="1">
+
+                    <input type="radio" class="quantity__input visually-hidden" name="chose-quantity" id="quantity-minus">
+                    <label for="quantity-minus" class="quantity__label quantity__label-minus">-</label>
+
+
                     <!--Здесь кнопки нужно делать инпутами с лейблами-->                                       
-                    <button class="quantity__button quantity__button--plus" id="plus">+</button>
+                    <!-- <button class="quantity__button quantity__button--plus" id="plus">+</button>
                     <label for="quantity" class="visually-hidden"></label> 
                     <input  type="number" class="quantity__input" name="number" id="quantity" value="1">
-                    <button class="quantity__button quantity__button--minus" id="minus">-</button>
+                    <button class="quantity__button quantity__button--minus" id="minus">-</button> -->
                 </fieldset>
                 <fieldset class="order__cost cost">
                     <legend class="cost__title">Cost</legend>
-                    <label for="cost-good" class="visually-hidden"></label>
+                    <label for="cost-good" class="cost__label">&#36;120.<span class="cost-good__price">00</span></label>
                     <!-- нужен ли тут label? -->
-                    <input type="text" class="cost__input" name="cost" id="cost-good">
+                    <input type="text" class="cost__input visually-hidden" name="cost" id="cost-good">
                 </fieldset>
-            </form>         
-            <a class="order__guide-btn" href="#">Size guide</a>
+                <a class="order__guide-btn" href="#">Size guide</a>
+            </form>          
+            <hr class="order__line2">
             <div class="order__details">
                 <p class="order__details-title">PRODUCT DETAILS</p>
                 <p class="order__details-description">Look out for its standout party dresses, feminine details, statement jackets and cool denim 
