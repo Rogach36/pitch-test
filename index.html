@@ -7,12 +7,38 @@
     <title>Gussi-collection</title>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+   <!--  <style>
+        body {
+          opacity: 0.5;
+        }
+
+        HTML {
+          background-repeat: no-repeat;
+          background-position: 50% 0;
+          background-image: url("desctop/gussi-desktop.png");
+        }
+
+        @media (min-width: 660px) {
+          HTML {
+             background-image: url("img/TabletIndex.jpg"); 
+             background-image: url("img/index-tab-close.jpg"); 
+          }
+        }
+
+           @media (min-width: 960px) {
+            HTML {
+               background-image: url("img/DesktopIndex.jpg");
+          }
+        } 
+      </style> -->
 </head>
 <body>
-    <header class="page-header promo-slider__wrapper">
-        <a class="page-header__logo logo" href="#">
-            <img class="logo__pic" src="img/desctop-img/logo.svg" alt="gussi-logo">
-        </a>
+    <header class="page-header container-center">
+        <div class="page-header__logo-wrapper">
+            <a class="page-header__logo logo" href="#">
+                <img class="logo__pic" src="img/desctop-img/logo.svg" width="95" height="53" alt="gussi-logo">
+            </a>
+        </div>        
     </header>
     <main class="page-main container-center">        
         <h1 class="visually-hidden">New Gussi collection</h1>
@@ -21,7 +47,7 @@
                 
                     <h2 class="slide1__name">Light coat</h2>            
                     <p class="slide1__slogan">More cotton, more freedom</p>
-                    <p class="slide1__number">01&nbsp;&ndash;&nbsp;03</p>  
+                    <p class="slide1__number">01&nbsp;&ndash;&nbsp;<span class="slide1__number--second">03</span></p>  
                                              
             </div>
             <div class="promo__slide2 slide2">                
@@ -40,6 +66,7 @@
             </div>
         </section>
         <section class="order">
+            <div class="order__wrapper">
             <!-- Проверить в Аркане, Нердс или Лувре. По-моему такие штуки верстаются лейблами
             и инпутами -->
             <h2 class="order__title">New collection</h2>
@@ -103,11 +130,13 @@
                     <!-- нужен ли тут label? -->
                     <input type="text" class="cost__input visually-hidden" name="cost" id="cost-good">
                 </fieldset>
+                <div class="order__guide-wrapper">
                 <a class="order__guide-btn" href="#">Size guide</a>
+            </div>
             </form>          
             <hr class="order__line2">
             <div class="order__details">
-                <p class="order__details-title">PRODUCT DETAILS</p>
+                <p class="order__details-title">Product details</p>
                 <p class="order__details-description">Look out for its standout party dresses, feminine details, statement jackets and cool denim 
                     including skinny-cut jeans and cute denim shorts, which sit alongside its directional footwear 
                     and swimwear ranges.
@@ -116,14 +145,18 @@
             </div>                        
             <a class="order__btn" href="#">Order now</a>
             <div class="order__delivery">
-                <input type="radio" id="tab1" name="tab-group">
-                <label class="order__delivery-title" for="tab1">Delivery</label> 
-                <section class="order__delivery-content">Сontent</section> 
+                <input class="order__delivery-input" type="checkbox" id="send" name="tab-group">
+                <label class="order__delivery-title" for="send">Delivery</label> 
+                <section class="order__delivery-content">
+                    <p>Some Сontent</p>
+                </section> 
             </div>
             <div class="order__return">
-                <input type="radio" id="tab1" name="tab-group">
-                <label class="order__return-title" for="tab1">Return</label> 
-                <section class="order__return-content">Сontent</section> 
+                <input class="order__return-input" type="checkbox" id="back" name="tab-group">
+                <label class="order__return-title" for="back">Return</label> 
+                <section class="order__return-content">
+                    <p>Some Сontent</p>
+                </section> 
             </div>
             <section class="similar-collection">
                 <h2 class="similar-collectio__title">Similar collections</h2>
@@ -131,9 +164,10 @@
                     <a class="collection__1" href="#"><img src="" alt="image"></a>
                     <a class="collection__2" href="#"><img src="" alt="image"></a>
                 </div>                
-            </section>          
+            </section>  
+        </div>        
         </section>
-        <section class="newsletter subscribe">
+        <section class="newsletter subscribe subscribe__wrapper">
             <h2 class="newsletter__title">Subscribe our newsletter</h2>
             <form id="subscribe-form" action="#" method="post">
                 <fieldset class="subscribe-form__feedback feedback">
