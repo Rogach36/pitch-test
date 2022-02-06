@@ -133,63 +133,96 @@ html {
     display: inline-block;
     margin-left: 14px;
   }
+/*------------------------*/
 
-  .promo-slider__toggle-cover {
-      position: relative;
-  } 
+.promo-slider__toggle-cover {
+  position: relative;
+  margin-right: 90px;
+}
+
+button {
+padding: 0;
+border: 0;
+font: inherit;
+color: inherit;
+background-color: transparent;
+cursor: pointer;
+}
 
 .promo-slider__toggle {
-    position: relative;
-    display: block;
-    z-index: 7;
-    margin-bottom: 7px;
-    bottom: 54px;
-    width: 17px;
-    height: 17px;   
-    border: 3px solid #ffffff;
-    background-color: transparent;
-    border-right-color: transparent;
-    border-top-color: transparent;   
-    cursor: pointer;    
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #ffffff;
 }
 
-.promo-slider__toggle--left {
-    position: relative;
-    left: 64px;
-    bottom: 46px;
+
+.promo-slider__toggle-left {
+    border-top-color: transparent;
+    border-right-color: transparent;     
+    left: 30px;
+    bottom: 30px;
     transform: rotate(45deg);
-}
+    z-index: 12;
+  }
 
-.promo-slider__toggle--left:hover:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  bottom: -17px;
-  right: -12px;
-}
+  .promo-slider__toggle-right {
+    border-right-color: transparent;
+    border-top-color: transparent;
+    left: 70px;
+    bottom: 30px;
+    transform: rotate(225deg);
+  }
 
-.promo-slider__toggle--right {
-    position: relative;
-    left: 102px;
-    bottom: 70px;
-    transform: rotate(225deg);    
-}
+  /* .promo-slider__toggle-left::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -19px;
+    left: -18px; 
+    border-radius: 50%;
+    border: 1px solid #ffffff;      
+    z-index: -23;
+  }
+ */
+  .promo-slider__toggle-left:hover::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -19px;
+    left: -19px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;      
+    z-index: -23;
+  }
 
-.promo-slider__toggle--right:hover::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  bottom: -17px;
-  right: -12px;
-}
+ .promo-slider__toggle-left:active::before {
+    background-image: url(img/desktop-img/arrow-active-left.png);
+    transform: rotate(-45deg);
+    bottom: -20px;
+    left: -21px;  
+  }
+
+  .promo-slider__toggle-right:hover::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -19px;
+    left: -18px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;      
+    z-index: -23;
+  }
+
+ .promo-slider__toggle-right:active::before {
+    background-image: url(img/desktop-img/arrow-active-right.png);
+    transform: rotate(132deg);
+    bottom: -19px;
+    left: -19px;
+  }
 
 .order {
   position: relative;
@@ -724,14 +757,6 @@ fieldset {
   padding-top: 27px;
 }
 
-@media (min-width: 1360px) {
-.similar-collection-img {
-  display: flex;  
-  flex-wrap: wrap;
-}
-
-}
-
 .collection__1,
 .collection__2 {
   display: block;
@@ -886,6 +911,22 @@ fieldset {
 }
 
 
+@media (min-width: 1360px) {
+  .similar-collection-img {
+    display: flex;  
+    flex-wrap: wrap;
+  }
+
+  .promo-slider__toggle-cover {  
+    left: 35px;
+  }
+
+  .promo-slider__toggle-left,
+  .promo-slider__toggle-right {
+    bottom: 41px;
+  }
+}
+
 @media (max-width: 320px) {
   .promo__slide1 {
     background-image: url(img/mobil-img/image\ 2.1.jpg);
@@ -934,13 +975,17 @@ fieldset {
       margin-bottom: 34px;
       padding-left: 2px;
     }
+    
+    .promo-slider__toggle-cover {
+      left: 142px;
+    }
 
     .promo-slider__toggle--left {
-      left: 168px;
+      bottom: 33px;      
     }
 
     .promo-slider__toggle--right {
-      left: 204px;
+      bottom: 33px;
     }
 
     .order__wrapper, 
@@ -1087,7 +1132,7 @@ fieldset {
   .page-main {
     width: 720px;
     margin: 0 auto;      
-    }  
+    }    
 }
 
 @media (min-width: 320px) and (max-width: 1359px) {
