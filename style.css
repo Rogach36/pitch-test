@@ -910,7 +910,6 @@ fieldset {
   background-color: #3B536D;
 }
 
-
 @media (min-width: 1360px) {
   .similar-collection-img {
     display: flex;  
@@ -924,6 +923,11 @@ fieldset {
   .promo-slider__toggle-left,
   .promo-slider__toggle-right {
     bottom: 41px;
+  }
+/*--------скроллинг слайдера--------------*/
+  .promo__wrap-scroll {
+    float: left;
+    position: fixed;
   }
 }
 
