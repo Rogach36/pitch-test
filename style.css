@@ -241,7 +241,7 @@ cursor: pointer;
     text-transform: uppercase;
 }
 
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
     
   .logo__pic {
     padding-top: 24px;
@@ -260,7 +260,7 @@ cursor: pointer;
   .page-main {
     display: block;
   }
-}
+} */
 
 .order__name-product {
     width: 330px;
@@ -910,7 +910,12 @@ fieldset {
   background-color: #3B536D;
 }
 
-@media (min-width: 1360px) {
+.similar-collection-img {
+  display: flex;  
+  flex-wrap: wrap;
+}
+
+/* @media (min-width: 1360px) {
   .similar-collection-img {
     display: flex;  
     flex-wrap: wrap;
@@ -924,14 +929,15 @@ fieldset {
   .promo-slider__toggle-right {
     bottom: 41px;
   }
-/*--------скроллинг слайдера--------------*/
-  .promo__wrap-scroll {
+ */
+ /*--------скроллинг слайдера--------------*/
+ /*  .promo__wrap-scroll {
     float: left;
     position: fixed;
   }
-}
+} */
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   .promo__slide1 {
     background-image: url(img/mobil-img/image\ 2.1.jpg);
     background-repeat: no-repeat;
@@ -943,8 +949,7 @@ fieldset {
 
   .page-header__logo-wrapper {
     position: relative;
-    width: 320px;
-    /* padding: 0 16px; */
+    width: 320px;    
     left: 130px;
   }
 
@@ -995,7 +1000,7 @@ fieldset {
     .order__wrapper, 
     .subscribe__wrapper {
       width: 353px;
-      padding-left: 16px/*20px*/;
+      padding-left: 16px;
       padding-right: 2px;
       margin: 0 auto;
     }
@@ -1128,18 +1133,18 @@ fieldset {
   .subscribe-form__button {
     margin-bottom: 16px;
   }
-}
+} */
 
-@media (min-width: 720px) and (max-width: 1360px) {
+/* @media (min-width: 720px) and (max-width: 1360px) {
   
   .page-header,
   .page-main {
     width: 720px;
     margin: 0 auto;      
     }    
-}
+} */
 
-@media (min-width: 320px) and (max-width: 1359px) {
+/* @media (min-width: 320px) and (max-width: 1359px) {
 
   .promo__slide1 { 
     background-image: url(img/tablet-img/slide1-tab.jpg);
@@ -1245,4 +1250,4 @@ fieldset {
   .subscribe-form__button {
     margin-bottom: 20px;
   }  
-}
+} */
